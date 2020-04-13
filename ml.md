@@ -41,3 +41,7 @@ TODO
 ## Loss function
 
 ### Cross Entropy
+
+### sparse_softmax_cross_entropy_with_logits
+
+### tape.gradiet
