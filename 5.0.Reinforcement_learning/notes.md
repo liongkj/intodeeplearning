@@ -42,6 +42,39 @@ Total Reward (return) = reward(t) + reward(t+1) + reward(t+n)
 
 #### Deep Q Network(DQN)
 
+![](deepqn.png)
+
+- argmax q value to determine which policy
+
+- good for atari games
+
+- limited to discrete action space
+
+##### Downside
+
+1. if action space too big / infinite
+
+2. only for finite small possible actions
+
+3. cannot learn stochastic policies
+
 ### Policy Learning
 
 - directly learn policy
+
+- output a probability of "taking an action gives highest q-value"
+
+- "90% confirm that you should go left"
+
+- Can used in conitnious action space
+
+#### Advantages
+
+- remove the contrain of classification
+
+### Action Space
+
+|             Discrete             |        Continuous         |
+| :------------------------------: | :-----------------------: |
+| "which direction should i move?" | "how fast should i move?" |
+|          output q-value          |  output (mean, variance)  |
